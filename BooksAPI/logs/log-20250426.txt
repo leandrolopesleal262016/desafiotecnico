@@ -1756,3 +1756,35 @@ LIMIT @__p_1 OFFSET @__p_0
 2025-04-26 15:35:41.819 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.2883ms
 2025-04-26 15:35:41.820 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
 2025-04-26 15:35:41.820 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 11.7129ms
+2025-04-26 15:35:47.658 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:35:47.659 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:35:47.660 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:35:47.661 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:35:47.663 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:35:47.664 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:35:47.666 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:35:47.666 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 4.4823ms
+2025-04-26 15:35:47.667 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:35:47.668 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 10.2365ms
+2025-04-26 15:36:57.806 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:36:57.808 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:36:57.809 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:36:57.810 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:36:57.812 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:36:57.814 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:36:57.815 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:36:57.816 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 4.4147ms
+2025-04-26 15:36:57.817 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:36:57.817 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 11.5351ms
