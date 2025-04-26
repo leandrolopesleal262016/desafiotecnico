@@ -1,6 +1,7 @@
 # Desafio Técnico - Coleta de Dados de Livros com RPA
 
 Este projeto implementa uma solução completa para coletar dados do site **Books to Scrape**, armazená-los em um banco de dados PostgreSQL e disponibilizá-los através de uma API REST e interface web.
+![iNTERFACE wEB](images/interface_web.png)
 
 ## 📑 Índice
 
