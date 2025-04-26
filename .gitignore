@@ -1,0 +1,23 @@
+# Arquivos e pastas do .NET
+bin/
+obj/
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Logs
+logs/
+*.log
+
+# Arquivos de ambiente
+.env
+appsettings.Development.json
+
+# Dependências
+node_modules/
+
+# Outros
+.DS_Store
+Thumbs.db

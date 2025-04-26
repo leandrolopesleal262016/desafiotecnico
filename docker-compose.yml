@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  # Serviço do PostgreSQL
+  postgres:
+    image: postgres:16-alpine
+    container_name: bookscraper-postgres
+    environment:
+      POSTGRES_DB: bookscraper
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - bookscraper-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Serviço da API
+  api:
+    build:
+      context: ./BooksAPI
+      dockerfile: Dockerfile
+    container_name: bookscraper-api
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=bookscraper;Username=postgres;Password=postgres
+    ports:
+      - "8080:80"
+    networks:
+      - bookscraper-network
+
+  # Serviço do Worker
+  worker:
+    build:
+      context: ./BookScraperWorker
+      dockerfile: Dockerfile
+    container_name: bookscraper-worker
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=bookscraper;Username=postgres;Password=postgres
+      - ScrapingIntervalInHours=6
+    networks:
+      - bookscraper-network
+
+networks:
+  bookscraper-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
