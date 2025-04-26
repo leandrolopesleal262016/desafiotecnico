@@ -260,7 +260,7 @@ services:
 
 ## Autor
 
-Desenvolvido como parte do Desafio Técnico.
+Desenvolvido por Leandro Leal como parte do Desafio Técnico.
 
 ## Licença
 
