@@ -112,3 +112,4 @@ C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BooksAPI\obj\Debug\ne
 C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BooksAPI\obj\Debug\net8.0\BooksAPI.pdb
 C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BooksAPI\obj\Debug\net8.0\BooksAPI.genruntimeconfig.cache
 C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BooksAPI\obj\Debug\net8.0\ref\BooksAPI.dll
+C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BooksAPI\obj\Debug\net8.0\BooksAPI.sourcelink.json

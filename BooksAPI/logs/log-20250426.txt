@@ -3372,3 +3372,611 @@ LIMIT @__p_1 OFFSET @__p_0
 2025-04-26 15:44:08.506 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 6.0769ms
 2025-04-26 15:44:08.507 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
 2025-04-26 15:44:08.508 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 12.2239ms
+2025-04-26 15:44:35.824 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:44:35.827 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:44:35.827 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:44:35.828 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:44:35.830 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:44:35.832 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:44:35.834 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:44:35.834 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.4686ms
+2025-04-26 15:44:35.835 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:44:35.836 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 11.3119ms
+2025-04-26 15:44:36.982 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:44:36.984 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:44:36.985 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:44:36.986 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:44:36.990 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:44:36.992 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:44:36.993 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:44:36.994 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.0844ms
+2025-04-26 15:44:36.995 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:44:36.996 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 14.0545ms
+2025-04-26 15:46:00.938 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:46:00.940 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:46:00.941 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:46:00.942 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:46:00.944 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:46:00.948 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:46:00.950 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:46:00.951 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 7.5452ms
+2025-04-26 15:46:00.952 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:46:00.953 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 15.0792ms
+2025-04-26 15:46:01.393 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:46:01.394 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:46:01.395 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:46:01.396 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:46:01.399 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:46:01.404 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:46:01.406 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:46:01.408 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 10.2638ms
+2025-04-26 15:46:01.409 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:46:01.410 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 17.4815ms
+2025-04-26 15:46:01.530 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:46:01.532 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:46:01.533 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:46:01.534 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:46:01.537 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:46:01.540 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:46:01.542 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:46:01.543 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 7.5371ms
+2025-04-26 15:46:01.544 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:46:01.545 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 15.4819ms
+2025-04-26 15:48:31.554 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:48:31.557 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:48:31.558 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:48:31.559 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:48:31.633 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:48:31.645 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:48:31.648 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:48:31.649 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 88.5041ms
+2025-04-26 15:48:31.650 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:48:31.651 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 96.8364ms
+2025-04-26 15:48:31.922 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:48:31.924 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:48:31.924 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:48:31.925 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:48:31.932 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:48:31.934 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:48:31.935 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:48:31.936 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.795ms
+2025-04-26 15:48:31.937 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:48:31.938 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 16.139ms
+2025-04-26 15:49:31.392 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:49:31.394 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:49:31.395 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:31.396 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:49:31.400 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:49:31.404 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:49:31.406 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:49:31.407 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 8.2664ms
+2025-04-26 15:49:31.408 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:31.409 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 17.2274ms
+2025-04-26 15:49:31.507 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:49:31.509 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:49:31.510 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:31.511 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:49:31.514 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:49:31.516 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:49:31.518 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:49:31.518 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.3932ms
+2025-04-26 15:49:31.519 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:31.520 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 13.1124ms
+2025-04-26 15:49:38.312 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:49:38.314 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:49:38.314 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:38.315 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:49:38.318 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:49:38.319 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:49:38.321 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:49:38.322 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.7191ms
+2025-04-26 15:49:38.324 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:38.324 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 12.6282ms
+2025-04-26 15:49:38.540 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:49:38.543 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:49:38.543 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:38.544 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:49:38.547 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:49:38.549 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:49:38.551 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:49:38.553 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 6.7202ms
+2025-04-26 15:49:38.554 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:38.555 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 14.2588ms
+2025-04-26 15:49:38.864 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:49:38.867 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:49:38.867 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:38.868 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:49:38.871 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:49:38.876 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:49:38.878 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:49:38.880 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 9.68ms
+2025-04-26 15:49:38.881 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:38.882 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 17.6869ms
+2025-04-26 15:49:39.316 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:49:39.318 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:49:39.319 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:39.324 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:49:39.329 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:49:39.340 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:49:39.343 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:49:39.345 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 16.4981ms
+2025-04-26 15:49:39.347 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:39.348 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 31.3636ms
+2025-04-26 15:49:39.849 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:49:39.851 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:49:39.851 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:39.852 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:49:39.855 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:49:39.859 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:49:39.861 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:49:39.862 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 8.2139ms
+2025-04-26 15:49:39.863 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:39.863 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 14.8251ms
+2025-04-26 15:49:40.824 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:49:40.826 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:49:40.827 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:40.828 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:49:40.830 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:49:40.832 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:49:40.834 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:49:40.835 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.0147ms
+2025-04-26 15:49:40.835 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:49:40.836 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 12.0059ms
+2025-04-26 15:52:15.673 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:52:15.677 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:52:15.679 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:15.680 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:52:15.687 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:52:15.690 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:52:15.693 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:52:15.696 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 10.4651ms
+2025-04-26 15:52:15.699 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:15.700 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 26.8745ms
+2025-04-26 15:52:16.034 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:52:16.036 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:52:16.037 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:16.038 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:52:16.041 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:52:16.043 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:52:16.045 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:52:16.047 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 7.0733ms
+2025-04-26 15:52:16.048 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:16.049 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 14.4206ms
+2025-04-26 15:52:16.284 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:52:16.286 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:52:16.286 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:16.287 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:52:16.290 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:52:16.292 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:52:16.294 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:52:16.295 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 6.2639ms
+2025-04-26 15:52:16.296 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:16.297 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 12.99ms
+2025-04-26 15:52:16.871 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:52:16.873 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:52:16.874 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:16.875 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:52:16.878 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:52:16.880 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:52:16.882 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:52:16.882 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 6.1296ms
+2025-04-26 15:52:16.883 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:16.884 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 12.8619ms
+2025-04-26 15:52:17.251 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:52:17.253 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:52:17.256 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:17.257 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:52:17.261 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:52:17.263 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:52:17.266 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:52:17.267 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 6.6695ms
+2025-04-26 15:52:17.268 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:17.269 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 17.9058ms
+2025-04-26 15:52:17.654 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:52:17.657 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:52:17.657 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:17.658 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:52:17.661 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:52:17.663 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:52:17.665 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:52:17.665 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.6978ms
+2025-04-26 15:52:17.666 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:17.667 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 12.5637ms
+2025-04-26 15:52:18.087 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:52:18.088 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:52:18.095 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:18.096 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:52:18.099 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:52:18.100 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:52:18.102 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:52:18.103 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.4831ms
+2025-04-26 15:52:18.104 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:18.105 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 18.306ms
+2025-04-26 15:52:18.527 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:52:18.529 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:52:18.531 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:18.532 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:52:18.534 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:52:18.536 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:52:18.538 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:52:18.538 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 5.2928ms
+2025-04-26 15:52:18.539 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:18.540 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 13.0731ms
+2025-04-26 15:52:18.700 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 15:52:18.703 -03:00 [INF] CORS policy execution successful.
+2025-04-26 15:52:18.704 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:18.705 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 15:52:18.707 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 15:52:18.710 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 15:52:18.712 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 15:52:18.713 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 7.0228ms
+2025-04-26 15:52:18.714 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 15:52:18.715 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 15.2555ms
+2025-04-26 16:33:17.482 -03:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-04-26 16:33:17.529 -03:00 [INF] Banco de dados verificado/criado com sucesso
+2025-04-26 16:33:17.579 -03:00 [INF] Now listening on: http://localhost:5015
+2025-04-26 16:33:17.582 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 16:33:17.585 -03:00 [INF] Hosting environment: Development
+2025-04-26 16:33:17.586 -03:00 [INF] Content root path: C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BooksAPI
+2025-04-26 16:33:25.162 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/ - null null
+2025-04-26 16:33:25.203 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-26 16:33:25.213 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/ - 404 0 null 52.746ms
+2025-04-26 16:33:25.220 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5015/, Response status code: 404
+2025-04-26 16:33:59.594 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/ - null null
+2025-04-26 16:33:59.604 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/ - 404 0 null 10.6941ms
+2025-04-26 16:33:59.610 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5015/, Response status code: 404
+2025-04-26 16:34:51.170 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:34:51.182 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:34:51.185 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:34:51.220 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:34:51.481 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:34:51.558 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:34:51.616 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:34:51.653 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 426.8904ms
+2025-04-26 16:34:51.656 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:34:51.661 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 491.1148ms
+2025-04-26 16:35:53.277 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:35:53.282 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:35:53.283 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:35:53.285 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:35:53.363 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:35:53.372 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:35:53.377 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:35:53.380 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 91.4589ms
+2025-04-26 16:35:53.381 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:35:53.383 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 106.1566ms
+2025-04-26 16:37:53.290 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:37:53.293 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:37:53.295 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:37:53.297 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:37:53.306 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:37:53.311 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:37:53.315 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:37:53.317 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 18.1786ms
+2025-04-26 16:37:53.320 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:37:53.322 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 32.6449ms
+2025-04-26 16:39:53.258 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:39:53.262 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:39:53.263 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:39:53.265 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:39:53.360 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:39:53.365 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:39:53.369 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:39:53.371 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 103.7118ms
+2025-04-26 16:39:53.375 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:39:53.376 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 118.5658ms
+2025-04-26 16:40:31.284 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:40:31.288 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:40:31.289 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:40:31.291 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:40:31.297 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:40:31.302 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:40:31.305 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:40:31.306 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 12.198ms
+2025-04-26 16:40:31.308 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:40:31.310 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 25.1735ms
+2025-04-26 16:40:53.423 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:40:53.427 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:40:53.428 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:40:53.429 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:40:53.432 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:40:53.436 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:40:53.438 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:40:53.440 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 9.0474ms
+2025-04-26 16:40:53.441 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:40:53.442 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 19.0954ms
+2025-04-26 16:41:34.002 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:41:34.009 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:41:34.011 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:41:34.015 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:41:34.030 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:41:34.035 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:41:34.049 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:41:34.068 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 48.6645ms
+2025-04-26 16:41:34.073 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:41:34.075 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 73.0663ms
+2025-04-26 16:41:40.220 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:41:40.224 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:41:40.225 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:41:40.226 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:41:40.229 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:41:40.233 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:41:40.236 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:41:40.237 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 9.3903ms
+2025-04-26 16:41:40.238 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:41:40.239 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 19.3475ms
+2025-04-26 16:41:53.251 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:41:53.256 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:41:53.257 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:41:53.260 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:41:53.264 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:41:53.267 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:41:53.269 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:41:53.271 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 8.3962ms
+2025-04-26 16:41:53.272 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:41:53.273 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 21.7678ms
+2025-04-26 16:43:53.288 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:43:53.291 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:43:53.292 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:43:53.294 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:43:53.299 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:43:53.303 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:43:53.307 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:43:53.309 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 12.2742ms
+2025-04-26 16:43:53.311 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:43:53.313 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 25.5135ms
+2025-04-26 16:45:53.295 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:45:53.299 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:45:53.300 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:45:53.302 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:45:53.390 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:45:53.395 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:45:53.398 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:45:53.400 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 94.7357ms
+2025-04-26 16:45:53.401 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:45:53.402 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 107.3356ms
+2025-04-26 16:47:53.288 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - null null
+2025-04-26 16:47:53.292 -03:00 [INF] CORS policy execution successful.
+2025-04-26 16:47:53.293 -03:00 [INF] Executing endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:47:53.295 -03:00 [INF] Route matched with {action = "GetLivros", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksAPI.DTOs.PaginatedResponse`1[BooksAPI.Models.Book]]] GetLivros(System.String, Int32, Int32) on controller BooksAPI.Controllers.LivrosController (BooksAPI).
+2025-04-26 16:47:53.300 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM livros AS l
+2025-04-26 16:47:53.305 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+ORDER BY l.titulo
+LIMIT @__p_1 OFFSET @__p_0
+2025-04-26 16:47:53.320 -03:00 [INF] Executing OkObjectResult, writing value of type 'BooksAPI.DTOs.PaginatedResponse`1[[BooksAPI.Models.Book, BooksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-26 16:47:53.322 -03:00 [INF] Executed action BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI) in 24.5134ms
+2025-04-26 16:47:53.325 -03:00 [INF] Executed endpoint 'BooksAPI.Controllers.LivrosController.GetLivros (BooksAPI)'
+2025-04-26 16:47:53.326 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5015/api/livros?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 38.0632ms
+2025-04-26 16:50:24.997 -03:00 [INF] Application is shutting down...

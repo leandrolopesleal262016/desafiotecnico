@@ -147,16 +147,48 @@ Abra o arquivo `Frontend/index.html` em um navegador web ou utilize a extensão 
 
 ### Execução com Docker Compose
 
-Para executar todo o ambiente usando Docker:
+Execução com Docker
+Para executar o projeto com Docker, siga estas etapas:
 
-```bash
+Instalação do Docker:
+
+Instale o Docker Desktop em: https://www.docker.com/products/docker-desktop
+Após a instalação, inicie o Docker Desktop
+
+
+Ajuste no Frontend:
+
+IMPORTANTE: Antes de iniciar, você precisará modificar temporariamente o arquivo Frontend/js/app.js
+Mude a linha:
+javascriptconst API_URL = 'http://localhost:5015/api';
+
+Para:
+javascriptconst API_URL = 'http://localhost:8080/api';
+
+Após usar o Docker, você pode revertê-la para a configuração original
+
+
+Iniciar os Containers:
 docker-compose up -d
-```
 
-Isso iniciará:
-- PostgreSQL em `localhost:5432`
-- API em `localhost:8080`
-- Worker Service como um serviço de fundo
+Este comando iniciará o PostgreSQL, a API e o Worker em containers separados
+A API estará disponível em: http://localhost:8080/api/livros
+
+
+Abrir o Frontend:
+
+Abra o arquivo Frontend/index.html no navegador
+Ou use o Live Server do VS Code
+
+
+Encerrar os Containers:
+docker-compose down
+
+Use este comando quando terminar de usar a aplicação
+
+
+Lembre-se: Depois de terminar, restaure a URL original no arquivo app.js se for voltar à execução local.
+
 
 ## Componentes
 

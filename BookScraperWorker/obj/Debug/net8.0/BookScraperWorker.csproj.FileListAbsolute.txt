@@ -64,3 +64,4 @@ C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker\obj
 C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker\obj\Debug\net8.0\BookScraperWorker.pdb
 C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker\obj\Debug\net8.0\BookScraperWorker.genruntimeconfig.cache
 C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker\obj\Debug\net8.0\ref\BookScraperWorker.dll
+C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker\obj\Debug\net8.0\BookScraperWorker.sourcelink.json

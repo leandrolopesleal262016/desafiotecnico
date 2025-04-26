@@ -6227,3 +6227,438 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
    at BookScraperWorker.Services.ScraperService.ScrapeCategoryAsync(String categoryName, String categoryUrl) in C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker\Services\ScraperService.cs:line 87
    at BookScraperWorker.Services.ScraperService.ScrapeAllBooksAsync() in C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker\Services\ScraperService.cs:line 33
 2025-04-26 13:39:34.874 -03:00 [INF] Scraping concluído. Próxima execução em 6 horas
+2025-04-26 16:34:34.111 -03:00 [INF] Worker iniciado em: "2025-04-26T16:34:34.0983125-03:00"
+2025-04-26 16:34:34.164 -03:00 [INF] Iniciando processo de scraping em: "2025-04-26T16:34:34.1639425-03:00"
+2025-04-26 16:34:34.688 -03:00 [INF] Iniciando processo de scraping...
+2025-04-26 16:34:35.033 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/
+2025-04-26 16:34:35.038 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/
+2025-04-26 16:34:35.081 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 16:34:35.083 -03:00 [INF] Hosting environment: Development
+2025-04-26 16:34:35.084 -03:00 [INF] Content root path: C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker
+2025-04-26 16:34:36.070 -03:00 [INF] Received HTTP response headers after 1028.0652ms - 200
+2025-04-26 16:34:36.076 -03:00 [INF] End processing HTTP request after 1050.9826ms - 200
+2025-04-26 16:34:36.392 -03:00 [INF] Iniciando scraping da categoria: Travel
+2025-04-26 16:34:36.394 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/category/books/travel_2/index.html
+2025-04-26 16:34:36.396 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/category/books/travel_2/index.html
+2025-04-26 16:34:36.544 -03:00 [INF] Received HTTP response headers after 147.0495ms - 200
+2025-04-26 16:34:36.546 -03:00 [INF] End processing HTTP request after 151.7967ms - 200
+2025-04-26 16:34:36.555 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html
+2025-04-26 16:34:36.557 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html
+2025-04-26 16:34:36.701 -03:00 [INF] Received HTTP response headers after 142.5513ms - 200
+2025-04-26 16:34:36.703 -03:00 [INF] End processing HTTP request after 148.6864ms - 200
+2025-04-26 16:34:37.724 -03:00 [INF] Executed DbCommand (49ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:37.806 -03:00 [INF] Livro atualizado: It&#39;s Only the Himalayas
+2025-04-26 16:34:37.876 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:37.885 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/full-moon-over-noahs-ark-an-odyssey-to-mount-ararat-and-beyond_811/index.html
+2025-04-26 16:34:37.886 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/full-moon-over-noahs-ark-an-odyssey-to-mount-ararat-and-beyond_811/index.html
+2025-04-26 16:34:38.034 -03:00 [INF] Received HTTP response headers after 146.5531ms - 200
+2025-04-26 16:34:38.036 -03:00 [INF] End processing HTTP request after 151.2727ms - 200
+2025-04-26 16:34:38.189 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:38.194 -03:00 [INF] Livro atualizado: Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond
+2025-04-26 16:34:38.199 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:38.202 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/see-america-a-celebration-of-our-national-parks-treasured-sites_732/index.html
+2025-04-26 16:34:38.203 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/see-america-a-celebration-of-our-national-parks-treasured-sites_732/index.html
+2025-04-26 16:34:38.353 -03:00 [INF] Received HTTP response headers after 148.1838ms - 200
+2025-04-26 16:34:38.356 -03:00 [INF] End processing HTTP request after 153.653ms - 200
+2025-04-26 16:34:38.360 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:38.363 -03:00 [INF] Livro atualizado: See America: A Celebration of Our National Parks &amp; Treasured Sites
+2025-04-26 16:34:38.365 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:38.367 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/vagabonding-an-uncommon-guide-to-the-art-of-long-term-world-travel_552/index.html
+2025-04-26 16:34:38.369 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/vagabonding-an-uncommon-guide-to-the-art-of-long-term-world-travel_552/index.html
+2025-04-26 16:34:38.514 -03:00 [INF] Received HTTP response headers after 144.5627ms - 200
+2025-04-26 16:34:38.516 -03:00 [INF] End processing HTTP request after 148.8736ms - 200
+2025-04-26 16:34:38.520 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:38.523 -03:00 [INF] Livro atualizado: Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel
+2025-04-26 16:34:38.526 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:38.529 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/under-the-tuscan-sun_504/index.html
+2025-04-26 16:34:38.531 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/under-the-tuscan-sun_504/index.html
+2025-04-26 16:34:38.679 -03:00 [INF] Received HTTP response headers after 147.507ms - 200
+2025-04-26 16:34:38.681 -03:00 [INF] End processing HTTP request after 152.0962ms - 200
+2025-04-26 16:34:38.686 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:38.690 -03:00 [INF] Livro atualizado: Under the Tuscan Sun
+2025-04-26 16:34:38.693 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:38.696 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/a-summer-in-europe_458/index.html
+2025-04-26 16:34:38.697 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/a-summer-in-europe_458/index.html
+2025-04-26 16:34:38.842 -03:00 [INF] Received HTTP response headers after 142.9345ms - 200
+2025-04-26 16:34:38.844 -03:00 [INF] End processing HTTP request after 147.9561ms - 200
+2025-04-26 16:34:38.848 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:38.850 -03:00 [INF] Livro atualizado: A Summer In Europe
+2025-04-26 16:34:38.852 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:38.855 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/the-great-railway-bazaar_446/index.html
+2025-04-26 16:34:38.856 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/the-great-railway-bazaar_446/index.html
+2025-04-26 16:34:39.002 -03:00 [INF] Received HTTP response headers after 145.03ms - 200
+2025-04-26 16:34:39.006 -03:00 [INF] End processing HTTP request after 151.4218ms - 200
+2025-04-26 16:34:39.009 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:39.012 -03:00 [INF] Livro atualizado: The Great Railway Bazaar
+2025-04-26 16:34:39.015 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:39.018 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/a-year-in-provence-provence-1_421/index.html
+2025-04-26 16:34:39.020 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/a-year-in-provence-provence-1_421/index.html
+2025-04-26 16:34:39.174 -03:00 [INF] Received HTTP response headers after 153.3181ms - 200
+2025-04-26 16:34:39.177 -03:00 [INF] End processing HTTP request after 158.9911ms - 200
+2025-04-26 16:34:39.181 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:39.183 -03:00 [INF] Livro atualizado: A Year in Provence (Provence #1)
+2025-04-26 16:34:39.186 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:39.188 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/the-road-to-little-dribbling-adventures-of-an-american-in-britain-notes-from-a-small-island-2_277/index.html
+2025-04-26 16:34:39.190 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/the-road-to-little-dribbling-adventures-of-an-american-in-britain-notes-from-a-small-island-2_277/index.html
+2025-04-26 16:34:39.335 -03:00 [INF] Received HTTP response headers after 143.3384ms - 200
+2025-04-26 16:34:39.338 -03:00 [INF] End processing HTTP request after 149.1864ms - 200
+2025-04-26 16:34:39.350 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:39.353 -03:00 [INF] Livro atualizado: The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)
+2025-04-26 16:34:39.355 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:39.357 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/neither-here-nor-there-travels-in-europe_198/index.html
+2025-04-26 16:34:39.359 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/neither-here-nor-there-travels-in-europe_198/index.html
+2025-04-26 16:34:39.506 -03:00 [INF] Received HTTP response headers after 145.6635ms - 200
+2025-04-26 16:34:39.507 -03:00 [INF] End processing HTTP request after 150.0683ms - 200
+2025-04-26 16:34:39.510 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:39.512 -03:00 [INF] Livro atualizado: Neither Here nor There: Travels in Europe
+2025-04-26 16:34:39.515 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:39.518 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/1000-places-to-see-before-you-die_1/index.html
+2025-04-26 16:34:39.519 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/1000-places-to-see-before-you-die_1/index.html
+2025-04-26 16:34:39.664 -03:00 [INF] Received HTTP response headers after 143.0183ms - 200
+2025-04-26 16:34:39.666 -03:00 [INF] End processing HTTP request after 147.8375ms - 200
+2025-04-26 16:34:39.669 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:39.671 -03:00 [INF] Livro atualizado: 1,000 Places to See Before You Die
+2025-04-26 16:34:39.674 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:39.677 -03:00 [INF] Iniciando scraping da categoria: Mystery
+2025-04-26 16:34:39.679 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/category/books/mystery_3/index.html
+2025-04-26 16:34:39.680 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/category/books/mystery_3/index.html
+2025-04-26 16:34:39.825 -03:00 [INF] Received HTTP response headers after 143.8675ms - 200
+2025-04-26 16:34:39.828 -03:00 [INF] End processing HTTP request after 149.1206ms - 200
+2025-04-26 16:34:39.969 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/sharp-objects_997/index.html
+2025-04-26 16:34:39.972 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/sharp-objects_997/index.html
+2025-04-26 16:34:40.128 -03:00 [INF] Received HTTP response headers after 154.7923ms - 200
+2025-04-26 16:34:40.129 -03:00 [INF] End processing HTTP request after 159.7859ms - 200
+2025-04-26 16:34:40.132 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:40.134 -03:00 [INF] Livro atualizado: Sharp Objects
+2025-04-26 16:34:40.137 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:40.139 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html
+2025-04-26 16:34:40.140 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html
+2025-04-26 16:34:40.300 -03:00 [INF] Received HTTP response headers after 159.0036ms - 200
+2025-04-26 16:34:40.308 -03:00 [INF] End processing HTTP request after 169.2349ms - 200
+2025-04-26 16:34:40.311 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:40.314 -03:00 [INF] Livro atualizado: In a Dark, Dark Wood
+2025-04-26 16:34:40.316 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:40.318 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/the-past-never-ends_942/index.html
+2025-04-26 16:34:40.321 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/the-past-never-ends_942/index.html
+2025-04-26 16:34:40.470 -03:00 [INF] Received HTTP response headers after 148.0849ms - 200
+2025-04-26 16:34:40.473 -03:00 [INF] End processing HTTP request after 154.32ms - 200
+2025-04-26 16:34:40.475 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:40.479 -03:00 [INF] Livro atualizado: The Past Never Ends
+2025-04-26 16:34:40.482 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:40.484 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/a-murder-in-time_877/index.html
+2025-04-26 16:34:40.485 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/a-murder-in-time_877/index.html
+2025-04-26 16:34:40.631 -03:00 [INF] Received HTTP response headers after 144.9897ms - 200
+2025-04-26 16:34:40.634 -03:00 [INF] End processing HTTP request after 149.3952ms - 200
+2025-04-26 16:34:40.636 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:40.638 -03:00 [INF] Livro atualizado: A Murder in Time
+2025-04-26 16:34:40.641 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:40.643 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/the-murder-of-roger-ackroyd-hercule-poirot-4_852/index.html
+2025-04-26 16:34:40.644 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/the-murder-of-roger-ackroyd-hercule-poirot-4_852/index.html
+2025-04-26 16:34:40.824 -03:00 [INF] Received HTTP response headers after 176.5062ms - 200
+2025-04-26 16:34:40.826 -03:00 [INF] End processing HTTP request after 182.3778ms - 200
+2025-04-26 16:34:40.829 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:40.832 -03:00 [INF] Livro atualizado: The Murder of Roger Ackroyd (Hercule Poirot #4)
+2025-04-26 16:34:40.835 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:40.838 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/the-last-mile-amos-decker-2_754/index.html
+2025-04-26 16:34:40.839 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/the-last-mile-amos-decker-2_754/index.html
+2025-04-26 16:34:40.987 -03:00 [INF] Received HTTP response headers after 146.8812ms - 200
+2025-04-26 16:34:40.989 -03:00 [INF] End processing HTTP request after 151.2497ms - 200
+2025-04-26 16:34:40.998 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:41.000 -03:00 [INF] Livro atualizado: The Last Mile (Amos Decker #2)
+2025-04-26 16:34:41.002 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:41.004 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/that-darkness-gardiner-and-renner-1_743/index.html
+2025-04-26 16:34:41.005 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/that-darkness-gardiner-and-renner-1_743/index.html
+2025-04-26 16:34:41.152 -03:00 [INF] Received HTTP response headers after 145.2177ms - 200
+2025-04-26 16:34:41.157 -03:00 [INF] End processing HTTP request after 153.1124ms - 200
+2025-04-26 16:34:41.160 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:41.163 -03:00 [INF] Livro atualizado: That Darkness (Gardiner and Renner #1)
+2025-04-26 16:34:41.165 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:41.167 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/tastes-like-fear-di-marnie-rome-3_742/index.html
+2025-04-26 16:34:41.169 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/tastes-like-fear-di-marnie-rome-3_742/index.html
+2025-04-26 16:34:41.313 -03:00 [INF] Received HTTP response headers after 143.3951ms - 200
+2025-04-26 16:34:41.315 -03:00 [INF] End processing HTTP request after 148.1755ms - 200
+2025-04-26 16:34:41.318 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:41.320 -03:00 [INF] Livro atualizado: Tastes Like Fear (DI Marnie Rome #3)
+2025-04-26 16:34:41.322 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:41.325 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/a-time-of-torment-charlie-parker-14_657/index.html
+2025-04-26 16:34:41.327 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/a-time-of-torment-charlie-parker-14_657/index.html
+2025-04-26 16:34:41.475 -03:00 [INF] Received HTTP response headers after 146.8854ms - 200
+2025-04-26 16:34:41.483 -03:00 [INF] End processing HTTP request after 157.7776ms - 200
+2025-04-26 16:34:41.486 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:41.489 -03:00 [INF] Livro atualizado: A Time of Torment (Charlie Parker #14)
+2025-04-26 16:34:41.492 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:41.494 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/a-study-in-scarlet-sherlock-holmes-1_656/index.html
+2025-04-26 16:34:41.496 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/a-study-in-scarlet-sherlock-holmes-1_656/index.html
+2025-04-26 16:34:41.644 -03:00 [INF] Received HTTP response headers after 146.8783ms - 200
+2025-04-26 16:34:41.648 -03:00 [INF] End processing HTTP request after 153.6147ms - 200
+2025-04-26 16:34:41.651 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:41.653 -03:00 [INF] Livro atualizado: A Study in Scarlet (Sherlock Holmes #1)
+2025-04-26 16:34:41.656 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:41.659 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/poisonous-max-revere-novels-3_627/index.html
+2025-04-26 16:34:41.660 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/poisonous-max-revere-novels-3_627/index.html
+2025-04-26 16:34:41.806 -03:00 [INF] Received HTTP response headers after 143.7307ms - 200
+2025-04-26 16:34:41.808 -03:00 [INF] End processing HTTP request after 149.1416ms - 200
+2025-04-26 16:34:41.811 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:41.814 -03:00 [INF] Livro atualizado: Poisonous (Max Revere Novels #3)
+2025-04-26 16:34:41.816 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:41.819 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/murder-at-the-42nd-street-library-raymond-ambler-1_624/index.html
+2025-04-26 16:34:41.820 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/murder-at-the-42nd-street-library-raymond-ambler-1_624/index.html
+2025-04-26 16:34:41.966 -03:00 [INF] Received HTTP response headers after 144.5439ms - 200
+2025-04-26 16:34:41.967 -03:00 [INF] End processing HTTP request after 148.4776ms - 200
+2025-04-26 16:34:41.972 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:41.978 -03:00 [INF] Livro atualizado: Murder at the 42nd Street Library (Raymond Ambler #1)
+2025-04-26 16:34:41.980 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:41.984 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/most-wanted_623/index.html
+2025-04-26 16:34:41.985 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/most-wanted_623/index.html
+2025-04-26 16:34:42.149 -03:00 [INF] Received HTTP response headers after 161.1057ms - 200
+2025-04-26 16:34:42.151 -03:00 [INF] End processing HTTP request after 167.6706ms - 200
+2025-04-26 16:34:42.154 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:42.156 -03:00 [INF] Livro atualizado: Most Wanted
+2025-04-26 16:34:42.158 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:42.161 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/hide-away-eve-duncan-20_620/index.html
+2025-04-26 16:34:42.162 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/hide-away-eve-duncan-20_620/index.html
+2025-04-26 16:34:42.308 -03:00 [INF] Received HTTP response headers after 144.0539ms - 200
+2025-04-26 16:34:42.310 -03:00 [INF] End processing HTTP request after 149.0859ms - 200
+2025-04-26 16:34:42.312 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:42.315 -03:00 [INF] Livro atualizado: Hide Away (Eve Duncan #20)
+2025-04-26 16:34:42.317 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:42.319 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/boar-island-anna-pigeon-19_613/index.html
+2025-04-26 16:34:42.320 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/boar-island-anna-pigeon-19_613/index.html
+2025-04-26 16:34:42.464 -03:00 [INF] Received HTTP response headers after 142.6338ms - 200
+2025-04-26 16:34:42.466 -03:00 [INF] End processing HTTP request after 147.1065ms - 200
+2025-04-26 16:34:42.469 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:42.471 -03:00 [INF] Livro atualizado: Boar Island (Anna Pigeon #19)
+2025-04-26 16:34:42.474 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:42.476 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/the-widow_609/index.html
+2025-04-26 16:34:42.477 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/the-widow_609/index.html
+2025-04-26 16:34:42.623 -03:00 [INF] Received HTTP response headers after 144.7315ms - 200
+2025-04-26 16:34:42.626 -03:00 [INF] End processing HTTP request after 149.6654ms - 200
+2025-04-26 16:34:42.632 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:42.635 -03:00 [INF] Livro atualizado: The Widow
+2025-04-26 16:34:42.637 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:42.640 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/playing-with-fire_602/index.html
+2025-04-26 16:34:42.641 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/playing-with-fire_602/index.html
+2025-04-26 16:34:42.804 -03:00 [INF] Received HTTP response headers after 161.0857ms - 200
+2025-04-26 16:34:42.806 -03:00 [INF] End processing HTTP request after 166.0553ms - 200
+2025-04-26 16:34:42.808 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:42.810 -03:00 [INF] Livro atualizado: Playing with Fire
+2025-04-26 16:34:42.812 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:42.816 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/what-happened-on-beale-street-secrets-of-the-south-mysteries-2_506/index.html
+2025-04-26 16:34:42.817 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/what-happened-on-beale-street-secrets-of-the-south-mysteries-2_506/index.html
+2025-04-26 16:34:42.962 -03:00 [INF] Received HTTP response headers after 144.1385ms - 200
+2025-04-26 16:34:42.966 -03:00 [INF] End processing HTTP request after 150.4935ms - 200
+2025-04-26 16:34:42.970 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:42.972 -03:00 [INF] Livro atualizado: What Happened on Beale Street (Secrets of the South Mysteries #2)
+2025-04-26 16:34:42.974 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:42.977 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/the-bachelor-girls-guide-to-murder-herringford-and-watts-mysteries-1_491/index.html
+2025-04-26 16:34:42.978 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/the-bachelor-girls-guide-to-murder-herringford-and-watts-mysteries-1_491/index.html
+2025-04-26 16:34:43.125 -03:00 [INF] Received HTTP response headers after 145.5366ms - 200
+2025-04-26 16:34:43.127 -03:00 [INF] End processing HTTP request after 150.2451ms - 200
+2025-04-26 16:34:43.140 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:43.142 -03:00 [INF] Livro atualizado: The Bachelor Girl&#39;s Guide to Murder (Herringford and Watts Mysteries #1)
+2025-04-26 16:34:43.145 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:43.148 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/delivering-the-truth-quaker-midwife-mystery-1_464/index.html
+2025-04-26 16:34:43.150 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/delivering-the-truth-quaker-midwife-mystery-1_464/index.html
+2025-04-26 16:34:43.297 -03:00 [INF] Received HTTP response headers after 145.7233ms - 200
+2025-04-26 16:34:43.299 -03:00 [INF] End processing HTTP request after 150.4561ms - 200
+2025-04-26 16:34:43.302 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__titulo_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l.id, l.avaliacao, l.categoria, l.estoque, l.imagem_url, l.preco, l.titulo
+FROM livros AS l
+WHERE l.titulo = @__titulo_0
+LIMIT 1
+2025-04-26 16:34:43.305 -03:00 [INF] Livro atualizado: Delivering the Truth (Quaker Midwife Mystery #1)
+2025-04-26 16:34:43.307 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE livros SET avaliacao = @p0, categoria = @p1, estoque = @p2, imagem_url = @p3, preco = @p4, titulo = @p5
+WHERE id = @p6;
+2025-04-26 16:34:43.310 -03:00 [INF] Start processing HTTP request GET https://books.toscrape.com/catalogue/category/books/mystery_3/index.html/page-2.html
+2025-04-26 16:34:43.311 -03:00 [INF] Sending HTTP request GET https://books.toscrape.com/catalogue/category/books/mystery_3/index.html/page-2.html
+2025-04-26 16:34:43.467 -03:00 [INF] Received HTTP response headers after 154.3596ms - 404
+2025-04-26 16:34:43.468 -03:00 [INF] End processing HTTP request after 158.3795ms - 404
+2025-04-26 16:34:43.471 -03:00 [ERR] Erro durante o processo de scraping
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at BookScraperWorker.Services.ScraperService.ScrapeCategoryAsync(String categoryName, String categoryUrl) in C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker\Services\ScraperService.cs:line 87
+   at BookScraperWorker.Services.ScraperService.ScrapeAllBooksAsync() in C:\Users\leand\Desktop\Desafio Tecnico\BooksScraperProject\BookScraperWorker\Services\ScraperService.cs:line 33
+2025-04-26 16:34:43.495 -03:00 [INF] Scraping concluído. Próxima execução em 6 horas
+2025-04-26 16:50:36.775 -03:00 [INF] Application is shutting down...

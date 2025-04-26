@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Variáveis globais
     const API_URL = ' http://localhost:5015/api'; 
+    // const API_URL = 'http://localhost:8080/api';
     let currentPage = 1;
     let pageSize = 12;
     let currentBookId = null;
