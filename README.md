@@ -31,7 +31,7 @@ A solução está dividida em três componentes principais:
 ## Arquitetura
 
 A solução segue uma arquitetura de três camadas, com separação clara de responsabilidades:
-
+![Diagrama](images/diagrama_scraping.png)
 ```
 Books to Scrape Website
        ↓
